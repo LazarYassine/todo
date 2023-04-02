@@ -1,0 +1,193 @@
+.add_todo {
+    height: 40%;
+    width: 80%;
+    margin: 10px;
+    background-color: #191c20;
+    padding: 20px;
+    border-radius: .75em;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list_items {
+    padding: 20px;
+    height: 60%;
+    width: 80%;
+    margin: 10px;
+    background-color: #edcb50;
+    border-radius: .75em;
+}
+
+
+.container {
+    /* background-color: rgba(256, 256, 256, .1); */
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: .70em;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.item {
+    width: 90%;
+    height: 50px !important;
+    background-color: #ddd;
+    border-radius: .75em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 5px;
+}
+
+span, input, button {
+    color: black;
+}
+
+.task_input {
+    padding: 10px;
+    width: 80%;
+    border-radius: .7em;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+button {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    
+}
+
+
+
+
+input {
+    padding: 15px;
+    width: 60%;
+    border-radius: .5em;
+    background-color: rgba(256, 256, 256, 0.3);
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btnAddTodo {
+    border: 1px dashed #edcb50;
+    background-color: transparent;
+    padding: 14px 18px;
+    margin-left: 10px;
+    border-radius: .4em;
+    color: white;
+    transition: all 250ms ease-in-out;
+    font-size: 15px;
+}
+
+.btnAddTodo:hover {
+    background-color: #edcb50;
+    color: black;
+    border: dotted #eee 1px;
+}
+
+.container_searsh {
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed #edcb50;
+    border-radius: .75em;
+    transition: 1s all ease-in-out;
+}
+
+.container_searsh:hover {
+    border: 3px solid #edcb50;
+    /* background-color: rgba(256, 256, 256, 0.3); */
+}
+
+
+
+input {
+    padding: 15px;
+    width: 60%;
+    border-radius: .5em;
+    background-color: rgba(256, 256, 256, 0.3);
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input:hover {
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+input:focus {
+    outline: 1px #eee solid;
+}
+
+.btnAddTodo {
+    border: 1px dashed #edcb50;
+    background-color: transparent;
+    padding: 14px 18px;
+    margin-left: 10px;
+    border-radius: .4em;
+    color: white;
+    transition: all 250ms ease-in-out;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.btnAddTodo:hover {
+    background-color: #edcb50;
+    color: black;
+    border: dotted #eee 1px;
+}
+
+.container_search {
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed #edcb50;
+    border-radius: .75em;
+    transition: 1s all ease-in-out;
+}
+
+.container_search:hover {
+    border: 3px solid #edcb50;
+    /* background-color: rgba(256, 256, 256, 0.3); */
+}
+
+
+
+

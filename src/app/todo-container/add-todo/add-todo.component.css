@@ -1,0 +1,55 @@
+
+
+input {
+    padding: 15px;
+    width: 60%;
+    border-radius: .5em;
+    background-color: rgba(256, 256, 256, 0.3);
+    border: none;
+    color: white;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #eee;
+}
+
+input:focus {
+    outline: none;
+}
+
+.btnAddTodo {
+    border: 1px dashed #edcb50;
+    background-color: transparent;
+    padding: 14px 18px;
+    margin-left: 10px;
+    border-radius: .4em;
+    color: white;
+    transition: all 250ms ease-in-out;
+    font-size: 15px;
+}
+
+.btnAddTodo:hover {
+    background-color: #edcb50;
+    color: black;
+    border: dotted #eee 1px;
+}
+
+.container {
+    width: 80%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px dashed #edcb50;
+    border-radius: .75em;
+    transition: 1s all ease-in-out;
+}
+
+.container:hover {
+    border: 3px solid #edcb50;
+    /* background-color: rgba(256, 256, 256, 0.3); */
+}
+

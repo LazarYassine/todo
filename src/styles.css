@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.ngx-pagination .current {
+    background: #448c74 !important;
+    border-radius: 1em;
+}
+
+.pagination-next span, .pagination-previous span {
+    color: black;
+}
