@@ -181,6 +181,8 @@ input:focus {
     border: 3px dashed #edcb50;
     border-radius: .75em;
     transition: 1s all ease-in-out;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .container_search:hover {
@@ -189,5 +191,83 @@ input:focus {
 }
 
 
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 80px;
+    height: 38px;
+    /* background-color: red; */
+    top: 10px;
+    left: 10px;
+  }
+
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: .7em;
+  }
+
+  .slider:before {
+    position: absolute;
+    content: "🔍";
+    height: 30px;
+    width: 30px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    -webkit-transition: .4s;
+    transition: .4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input:checked + .slider {
+    background-color: #edcb50;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(38px);
+    -ms-transform: translateX(38px);
+    transform: translateX(38px);
+    content: '🔥';
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 
+  @media only screen and (max-width: 600px) {
+    .btnAddTodo {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    #txtaddTask {
+        width: 80%;
+    }
+
+    #txtTodo {
+        width: 80%;
+    }
+
+  }

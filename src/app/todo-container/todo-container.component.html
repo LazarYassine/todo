@@ -1,3 +1,10 @@
+
+
+<label style="position: absolute" class="switch">
+    <input (change)="AddMode = !AddMode" type="checkbox">
+    <span class="slider"></span>
+  </label>
+
 <!-- <app-add-todo  (todoEvent)="getTodo($event)" ></app-add-todo> -->
 <!-- <app-list-items [txtTodo]="txtTodo" ></app-list-items> -->
 <div class="add_todo">
@@ -5,7 +12,7 @@
         <input style="cursor: pointer;" *ngIf="!AddMode" id="txtTodo"  name="txtTodo" type="text"
             placeholder="Search Somthing..." [(ngModel)]="term" >
         <input *ngIf="AddMode" id="txtaddTask" name="txtTodo" type="text" [(ngModel)]="txtTodo" placeholder="Add a new Task...">
-        <button (click)="AddNewTask()" id="btnAddTodo" class="btnAddTodo">Add To Do</button>
+        <button [disabled]="AddMode == false" (click)="AddNewTask()" id="btnAddTodo" class="btnAddTodo">Add To Do</button>
     </div>
 </div>
 
